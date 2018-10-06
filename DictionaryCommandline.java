@@ -6,15 +6,6 @@ import java.util.*;
 public class DictionaryCommandline {                                
     static DictionaryManagement Dict = new DictionaryManagement();
     
-    public static void main(String[] args)throws IOException {      //trung anh code them throws IOException
-        //Dict.insertFromCommandline();                             //trung anh code
-        Dict.insertFromFile();                                      //trung anh code
-        //DictionaryCommandline Dict1 = new DictionaryCommandline(); 
-        //Dict1.showAllWords();
-        DictionaryManagement dict1 = new DictionaryManagement();
-        dict1.dictionaryLookup();
-        
-     }
     
     public void showAllWords() {                                    //show tất cả cá từ trong file
         int size = Dict.getSize();
@@ -24,4 +15,21 @@ public class DictionaryCommandline {
                    Dictionary.Words.get(i).getWord_explain());          
         }
     }
+     public void dictionaryBasic() {                                  //them ham dictionaryBasic
+         Dict.insertFromCommandline();                                                
+         showAllWords();                                              
+         
+     }
+    public void  dictionaryAdvanced() throws IOException {   //them ham dictionaryAdvanced
+         Dict.insertFromFile();                               
+         showAllWords();    
+         Dict.dictionaryLookup();
+
+     }
+    
+    public static void main(String[] args)throws IOException {     // ham main goi ham dictionaryAdvanced va ham dictionaryBasic
+        DictionaryCommandline dictCom = new DictionaryCommandline();
+        dictCom.dictionaryAdvanced();
+//      dictCom.DictionarySearcher();
+      }
 }
