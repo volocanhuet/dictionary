@@ -56,4 +56,17 @@ public class DictionaryManagement {
         }
    
     }
+    public void repairWord() {
+       
+        System.out.println("Nhap tu muốn sửa : ");
+        String str = sc.nextLine();
+        for (int i = 0; i < Dictionary.Words.size(); i++) {
+            if (str.equalsIgnoreCase(Dictionary.Words.get(i).getWord_target())) {
+                System.out.print("Từ mới : ");
+                Dictionary.Words.get(i).setWord_target(sc.nextLine());
+                System.out.print("Nghĩa : ");  
+                Dictionary.Words.get(i).setWord_explain(sc.nextLine());
+            }
+        }
+    }
 }
