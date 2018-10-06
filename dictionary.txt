@@ -1,0 +1,33 @@
+hello:xin chào
+hi:chào
+name:tên
+boy:con trai
+girl:con gái
+show:trýng bày
+now:hi?n t?i
+tv:tv
+computer:máy tính
+body:cõ th?
+shoes:ðôi giày
+shirt:áo
+hat:m?
+pan:ch?o
+gun:súng
+teacher:giáo viên
+doctor:bác s?
+mother:m?
+father:b?, ba
+book:sách
+pen:bút
+phone:ði?n tho?i
+smart:thông minh
+kind:t?t b?ng
+money:ti?n t?
+talk:nói chuy?n
+tall:cao
+short:th?p, ng?n
+slim:g?y
+fat:béo ph?
+overweigh:th?a cân
+underweigh:thi?u cân
+go:ði
